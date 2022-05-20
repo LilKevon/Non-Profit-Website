@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <link rel ="stylesheet" href ="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" 
+rel="stylesheet">
+<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/e615259a53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class = "logostuff"> 
+        <a href = "index.html" class = "logo"><img src ="Images/WebsiteLogo.png"></a>
+    </div>
+    <div class = "nav-links" id = "navLinks">
+        <i class="fa fa-times" onclick = "hideMenu()"></i>
+        <ul id="menu">
+            <li><a href = "index.html"><font size = "5">HOME</font></a></li>
+            <li><a href = "about.html"><font size = "5">ABOUT</font></a></li>
+            <li><a href = "course.html"><font size = "5">PROGRAMS</font></a></li>
+            <li><a href = "blog.html"><font size = "5">BLOG</font></a></li>
+            <li><a href = "contact.html"><font size = "5">CONTACT</font></a></li>         
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick = "showMenu()" ></i>
+    </header>
+
+    <section class ="banner1"></section>
+    
+    <section class="header">
+    <div class = "text-box">
+        <h1>Contact Us!</h1>                
+    </div>
+
+    </section>   
+
+    <section class = "about-us reveal">
+
+        <div class = "row">
+            <div class = "about-col ">
+                <h1> Questions? </h1>
+                <p>We feel that communication is the key to success, and the bridge for parents
+                    to know whats going on in their child's education. In order to sustain this, we
+                    have a 1 day guaranteed reply when you send us a query! Please do not hesitate to
+                    ask any questions that you may have for our programs.
+                </p>
+
+            </div>
+            <div class = "about-col">
+           <img src = "Images/Website17.png" width = 30% >
+</div>
+        </div>
+
+
+
+    </section>
+    
+    <section class = "contact-us reveal">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>647-531-5109</h5>
+                        <p>Monday to Saturday, 3:00PM to 10:00PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>contactinfo@outputsuccesseducation.org</h5>
+                        <p>Email us your query!</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col reveal">
+
+                <form action = "form-handler.php" method="post">
+                    <input type = "text" name ="name" placeholder="Enter your Name" required>
+                    <input type = "email" name = "email" placeholder="Enter your Email Address" required>
+                    <input type = "text" name = "subject" placeholder="Enter your Subject" required>
+                    <textarea rows="8"name = "message" placeholder="Message" required></textarea>
+                        <button type = "submit" class = "hero-btn red-btn">Send Message</button>
+                </form>
+
+            </div>
+
+            
+        </div>
+
+      </section>
+
+      <footer>
+        <div class = "rowfoot">
+            <div class = "colfoot">
+            <img src = "Images/WebsiteLogo.png" class = "logo"> 
+                <p>Output("Success!") is a non-profit, youth-led organization dedicated to providing free tutroing services for
+                    students interested in Computer Programming. Created by Kevin Li, his team and him guarentee high quality and safe
+                lessons that will give a great impression of Computer Science to your children, whether they are expirenced or just starting out.</p>
+        
+        </div>
+    
+            <div class = "colfoot">
+                <h3>Contact Us! <div class = "underline"><span></span></div></h3>
+                <p>Ontario, Canada</p>
+                
+                <p class = "email-id">contact@outputsuccesseducation.org</p>
+                <h4>647-531-5109</h4>
+            </div>
+            <div class = "colfoot">
+                <h3>Links<div class = "underline"><span></span></div></h3>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="course.html">Programs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+          
+            </div>
+        </ul>
+            <div class = "colfoot">
+                <h3>Newsletter<div class = "underline"><span></span></div></h3>
+                <form>
+                    <i class= "far fa-envelope"></i>
+                    <input type="email" id="email" size="30" required>
+                    <button type = "submit"><i class = "fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class = "fab fa-facebook-f"></i>
+                    <i class = "fab fa-instagram"></i>
+                    <i class = "fab fa-linkedin"></i>
+                    <i class = "fab fa-youtube"></i>
+    
+                </div>
+            </div>
+        
+            </div>
+            <hr>
+            <p class = "copyright">Output Success © 2022 - All Rights Reserved </p>
+            <p class = "copyright">Developed by  <a href = "about.html"> Kevin Li</a> and Designed by <a href = "about.html">Elli Lam</a> </p>
+           
+        
+            
+        
+            </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            
+        }
+
+    </script>
+
+<script type = "text/javascript">
+    window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+<script type ="text/javascript">
+    window.addEventListener('scroll', reveal);
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+    
+        for(var i = 0; i<reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+    
+            else{
+        reveals[i].classList.remove('active');
+     }
+    
+            
+        }
+    }
+       
+       
+    </script>
+
+</body>
+</html>
+
+

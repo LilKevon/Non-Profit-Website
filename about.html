@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Our Story</title>
+    <link rel ="stylesheet" href ="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" 
+rel="stylesheet">
+<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/e615259a53.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+   label input{
+    visibility: hidden;
+}
+</style>
+<body>
+
+    <header>
+        <div class = "logostuff"> 
+        <a href = "index.html" class = "logo"><img src ="Images/WebsiteLogo.png"></a>
+    </div>
+    <div class = "nav-links" id = "navLinks">
+        <i class="fa fa-times" onclick = "hideMenu()"></i>
+        <ul id="menu">
+            <li><a href = "index.html"><font size = "5">HOME</font></a></li>
+            <li><a href = "about.html"><font size = "5">ABOUT</font></a></li>
+            <li><a href = "course.html"><font size = "5">PROGRAMS</font></a></li>
+            <li><a href = "blog.html"><font size = "5">BLOG</font></a></li>
+            <li><a href = "contact.html"><font size = "5">CONTACT</font></a></li>         
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick = "showMenu()" ></i>
+    </header>
+
+    <section class ="banner1"></section>
+    <section class="header">
+    <div class = "text-box">
+        <h1>About Us!</h1>        
+
+    </div>
+
+    </section>   
+
+    <div class = "modal" id="modal">
+        <div class = "modal-header">
+            <div class = "title">Example Modal</div>
+            <button class = "close-button">&times;</button>
+        </div>
+        <div class = "modal-body">
+                DJAWLKDJWLAKDJLKWADJLKWAJDLKWAJKLDJWALD
+        </div>
+    </div>
+
+    <div id = "overlay"></div>
+
+    <section class = "about-us reveal">
+
+        <div class = "row">
+            <div class = "about-col">
+                <h1>The Start of A Dream</h1>
+                <p>Programming is extremely difficult, even for the most innovative of minds. Kevin and Jeffery both knew this too well.
+                    When Kevin started out, he quited several times because he felt the costs of programming outweighed the rewards. When
+                    Jeffery started his programming journey, he found it to be quite difficult as well. 
+                    <br><br>
+                    So when Kevin approached Jeffery with a idea, to guide future programmers in their journey through the realms of computer
+                    programming, Jeffery agreed to take on the task. Through countless hours of web development, class creation, and ensuring that
+                    Kevin's organization would reach its potential, Output("Success!") was created. 
+                    <br><br>
+                    Now, together with Jeffery, Kevin believes that, through Output("Success!"), students can discover their passion within Computer Science,
+                    all with a click of a button.<br><br>
+
+                    Scroll down to see the people that made this possible.
+                                </p>
+                <a href= "course.html" class="hero-btn red-btn">PROGRAMS</a>
+
+            </div>
+            <div class = "about-col">
+            <img src = "Images/Website11.jpg" width: 10%>
+</div>
+        </div>
+
+
+    </section>
+
+
+
+
+        
+    
+
+    <div class = "MeetTheTeam reveal"> 
+    <p1>Meet The Team!</p1>  
+   
+
+        <div class = 'wrapper-gridAbout'>
+
+           
+                <label>
+                    <input type = "checkbox"/>
+                    <div class = "flip-card ">
+                        <div class="front">
+                        <img src = "Images/Website50.jpg" width = 20% height = auto class = "profile-img">
+                        <h1>Kevin Li</h1>
+                        <h2>PRESIDENT</h2>
+                        
+                     
+                        <hr />
+                        <b>kevinli@outputsuccesseducation.org</b>
+                        <b></b>
+                        <div class="social-links">
+                            <div class="tooltip">
+                                <a href="https://www.instagram.com/lilkevon1/"><i class="fa fa-instagram"></i></a>
+                                <span class="tooltiptext">Instagram</span>
+                            </div>
+        
+                            <div class="tooltip">
+                                <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>
+                                <span class="tooltiptext">Linkedin</span>
+                            </div>
+        
+                           
+                        </div>
+                        <button class = "btn1">Click to See more!</button>
+                    </div>
+
+                    <div class ="back">
+                        <h1>About Me!</h1>
+                        <hr />
+                        <p>Hey there! My name is Kevin, and I'm the founder of Output Success! I'm currently in Grade 11, and I 
+                             I started this as a way to get volunteer hours during the COVID Pandemic, but I realized
+                            that I had a affinity for teaching/tutoring. Recently, I became Java Certified by Oracle, so it's safe to say I'm pretty well versed in Java. 
+                            I'm also pretty good at any other languages such as C++ and HTML(I coded the entire website!).
+                            I'm almost always online on Discord, so you can ask me questions at any time. 
+                        </p>
+                    </div>
+                </div>
+                </label>
+
+                <label>
+                    <input type = "checkbox"/>
+                    <div class = "flip-card ">
+                        <div class="front">
+                        <img src = "Images/Website6.jpg" width = 20% height = auto class = "profile-img">
+                        <h1>Jeffery Wong</h1>
+                        <h2>VICE PRESIDENT</h2>
+                        <hr />
+                        <b>jeffwong12@outputsuccesseducation.org</b>
+                        <div class="social-links">
+                            <div class="tooltip">
+                                <a href="https://www.instagram.com/lo._.jeff/"><i class="fa fa-instagram"></i></a>
+                                <span class="tooltiptext">Instagram</span>
+                            </div>
+        
+                         
+                        </div>
+                        <button class = "btn">Click to See more!</button>
+                    </div>
+
+                    <div class ="back">
+                        <h1>About me</h1>
+                        <hr />
+                        <p>Hi, my name is Jeffery. I was approached by Kevin in the Feburary of 2021 with the idea of creating a non-profit organization called "Output Success" with the goal of 
+                            helping students with computer programming. I agreed because it sounded like a really good idea, and I was eager to get some volunteer hours. I've had alot of 
+                            interest with computer programming, and I can answer any questions about Java. </p>
+                    </div>
+                </div>
+                </label>
+
+                <label>
+                    <input type = "checkbox" />
+                    <div class = "flip-card ">
+                        <div class="front">
+                        <img src = "Images/ElliThing.jpg" width = 20% height = auto class = "profile-img">
+                        <h1>Elli Lam</h1>
+                        <h2>Graphic Designer</h2>
+                        <hr />
+                        <b>ellilam12@outputsuccesseducation.org</b>
+                        <div class="social-links">
+                            <div class="tooltip">
+                                <a href="https://www.instagram.com/eriwt__/"><i class="fa fa-instagram"></i></a>
+                                <span class="tooltiptext">Instagram</span>
+                            </div>
+        
+                          
+                        </div>
+                        <button class = "btn">Click to See more!</button>
+                    </div>
+
+                    <div class ="back">
+                        <h1>About me</h1>
+                        <hr />
+                        <p>Hey! I'm Elli, and I'm a Graphic Designer for the website you're currently on! Kevin asked me for my opinions on the website, and there were a few changes that I suggested.
+                            He was pretty impressed, and brought me on as a graphic designer in order to help him make his website more visually appealing. I made some formats for him, and most of the website design
+                            was made by me. Although I don't code too much, I was taught Java, and I'm pretty good at it. Have fun learning!
+                            
+                        </p>
+                    </div>
+                </div>
+                </label>
+
+                <label>
+                    <input type = "checkbox" />
+                    <div class = "flip-card">
+                        <div class="front">
+                        <img src = "Images/Website9.jpg" width = 20% height = auto class = "profile-img">
+                        <h1>Aasir Abbas</h1>
+                        <h2>TUTOR</h2>
+                        <hr />
+                        <b>aasirabbas32@outputsuccesseducation.org</b>
+                        <div class="social-links">
+                            <div class="tooltip">
+                                <a href="https://www.instagram.com/aa51.__/"><i class="fa fa-instagram"></i></a>
+                                <span class="tooltiptext">Instagram</span>
+                            </div>
+        
+                        
+                        </div>
+                        <button class = "btn">Click to See more!</button>
+                    </div>
+
+                    <div class ="back">
+                        <h1>About me</h1>
+                        <hr />
+                        <p>Hi there, my name is Aasir! I took a computer science course in grade 10, and I found it incredibly interesting. When Kevin approached me with a tutoring position, I accepted,
+                            eager to share all my Java knowledge with students who are curious about computer science. I can answer questions about Java problems, and I'm pretty active on Discord. Remember, 
+                            learning a computer language is like learning any other language. It's gonna take time, but I will be happy to guide you!
+                        </p>
+                    </div>
+                </div>
+                </label>
+
+
+    
+
+        </div>
+    </div>
+
+        <footer>
+            <div class = "rowfoot">
+                <div class = "colfoot">
+                <img src = "Images/WebsiteLogo.png" class = "logo"> 
+                    <p>Output("Success!") is a non-profit, youth-led organization dedicated to providing free tutoring services for
+                        students interested in Computer Programming. Created by Kevin Li, his team and him guarentee high quality and safe
+                    lessons that will give a great impression of Computer Science to your children, whether they are expirenced or just starting out.</p>
+            
+            </div>
+        
+                <div class = "colfoot">
+                    <h3>Contact Us! <div class = "underline"><span></span></div></h3>
+                    <p>Ontario, Canada</p>
+                    
+                    <p class = "email-id">contact@outputsuccesseducation.org</p>
+                    <h4>647-531-5109</h4>
+                </div>
+                <div class = "colfoot">
+                    <h3>Links<div class = "underline"><span></span></div></h3>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="course.html">Programs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+              
+                </div>
+            </ul>
+                <div class = "colfoot">
+                    <h3>Newsletter<div class = "underline"><span></span></div></h3>
+                    <form>
+                        <i class= "far fa-envelope"></i>
+                        <input type="email" id="email" size="30" required>
+                        <button type = "submit" id =><i class = "fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class = "fab fa-instagram"></i>
+                        <i class = "fab fa-youtube"></i>
+                        <i class = "fab fa-discord"></i>
+        
+                    </div>
+                </div>
+            
+                </div>
+                <hr>
+                <p class = "copyright">Output Success © 2022 - All Rights Reserved </p>
+                <p class = "copyright">Developed by  <a href = "about.html"> Kevin Li</a> and Designed by <a href = "about.html">Elli Lam</a> </p>
+               
+            
+                
+            
+                </footer>
+
+
+
+                <script>
+                    const open = document.getElementById('open');
+                    const modal_container = document.getElementById('modal_container');
+                    const close = document.getElementById('close');
+            
+                        open.addEventListener('click', () =>{
+                            modal_container.classList.add('show');
+                        });
+        
+                        close.addEventListener('click', ()=>{
+                            modal_container.classList.remove('show');
+                        });
+        
+                </script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            
+        }
+
+    </script>
+
+
+   <script type = "text/javascript">
+       window.addEventListener("scroll", function(){
+           var header = document.querySelector("header");
+           header.classList.toggle("sticky", window.scrollY > 0 );
+       })
+
+   </script>
+
+   <script>
+       const faders = document.querySelectorAll('.fade-in');
+
+
+       const appearOptions = {
+           threshold: 1,
+           rootMargin: "0px 0px -200px 0px"
+           
+       };
+        const appearOnScroll = new IntersectionObserver(function(
+            entries, appearOnScroll
+            ){
+
+                entries.forEach(entry =>{
+                    if(!entry.isIntersecting){
+                        return;
+                    }
+                    else{
+                        entry.target.classList.add('appear');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                })
+            },
+             apearOptions);
+
+
+faders.forEach(fader =>{
+    appearOnScroll.observe(fader);
+
+
+});
+
+
+   </script>
+
+<script type = "text/javascript">
+    window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+
+<script type ="text/javascript">
+    window.addEventListener('scroll', reveal);
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+    
+        for(var i = 0; i<reveals.length; i++){
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+    
+            else{
+        reveals[i].classList.remove('active');
+     }
+    
+            
+        }
+    }
+       
+       
+    </script>
+</body>
+</html>
+
+
